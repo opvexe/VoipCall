@@ -1,0 +1,643 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D025B14F2032B51A00C75E1C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D025B14E2032B51A00C75E1C /* AppDelegate.m */; };
+		D025B1522032B51A00C75E1C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D025B1512032B51A00C75E1C /* ViewController.m */; };
+		D025B1552032B51A00C75E1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D025B1532032B51A00C75E1C /* Main.storyboard */; };
+		D025B1572032B51A00C75E1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D025B1562032B51A00C75E1C /* Assets.xcassets */; };
+		D025B15A2032B51A00C75E1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D025B1582032B51A00C75E1C /* LaunchScreen.storyboard */; };
+		D025B15D2032B51A00C75E1C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D025B15C2032B51A00C75E1C /* main.m */; };
+		D025B1672032B51A00C75E1C /* VoipCallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D025B1662032B51A00C75E1C /* VoipCallTests.m */; };
+		D025B1722032B51A00C75E1C /* VoipCallUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D025B1712032B51A00C75E1C /* VoipCallUITests.m */; };
+		D025B1832032BCC000C75E1C /* PushKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D025B1822032BCC000C75E1C /* PushKit.framework */; };
+		D025B1852032BCCA00C75E1C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D025B1842032BCCA00C75E1C /* MobileCoreServices.framework */; };
+		D025B1882032C22C00C75E1C /* ProviderDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D025B1872032C22C00C75E1C /* ProviderDelegate.m */; };
+		D025B18B2032C2C400C75E1C /* CallManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D025B18A2032C2C400C75E1C /* CallManager.m */; };
+		D025B18E2032CD1300C75E1C /* Call.m in Sources */ = {isa = PBXBuildFile; fileRef = D025B18D2032CD1300C75E1C /* Call.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D025B1632032B51A00C75E1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D025B1422032B51A00C75E1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D025B1492032B51A00C75E1C;
+			remoteInfo = VoipCall;
+		};
+		D025B16E2032B51A00C75E1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D025B1422032B51A00C75E1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D025B1492032B51A00C75E1C;
+			remoteInfo = VoipCall;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D0115C9D2033CB0900A87FA9 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D0115C932033CB0900A87FA9 /* CallDirectoryHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallDirectoryHandler.h; sourceTree = "<group>"; };
+		D0115C942033CB0900A87FA9 /* CallDirectoryHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallDirectoryHandler.m; sourceTree = "<group>"; };
+		D0115C962033CB0900A87FA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D025B14A2032B51A00C75E1C /* VoipCall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoipCall.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D025B14D2032B51A00C75E1C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D025B14E2032B51A00C75E1C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D025B1502032B51A00C75E1C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D025B1512032B51A00C75E1C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D025B1542032B51A00C75E1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D025B1562032B51A00C75E1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D025B1592032B51A00C75E1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D025B15B2032B51A00C75E1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D025B15C2032B51A00C75E1C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D025B1622032B51A00C75E1C /* VoipCallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoipCallTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D025B1662032B51A00C75E1C /* VoipCallTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VoipCallTests.m; sourceTree = "<group>"; };
+		D025B1682032B51A00C75E1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D025B16D2032B51A00C75E1C /* VoipCallUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoipCallUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D025B1712032B51A00C75E1C /* VoipCallUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VoipCallUITests.m; sourceTree = "<group>"; };
+		D025B1732032B51A00C75E1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D025B1822032BCC000C75E1C /* PushKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PushKit.framework; path = System/Library/Frameworks/PushKit.framework; sourceTree = SDKROOT; };
+		D025B1842032BCCA00C75E1C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		D025B1862032C22C00C75E1C /* ProviderDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProviderDelegate.h; sourceTree = "<group>"; };
+		D025B1872032C22C00C75E1C /* ProviderDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProviderDelegate.m; sourceTree = "<group>"; };
+		D025B1892032C2C400C75E1C /* CallManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallManager.h; sourceTree = "<group>"; };
+		D025B18A2032C2C400C75E1C /* CallManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallManager.m; sourceTree = "<group>"; };
+		D025B18C2032CD1300C75E1C /* Call.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Call.h; sourceTree = "<group>"; };
+		D025B18D2032CD1300C75E1C /* Call.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Call.m; sourceTree = "<group>"; };
+		D02C3DF4204539F0009179F8 /* VoipCall.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = VoipCall.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D025B1472032B51A00C75E1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D025B1852032BCCA00C75E1C /* MobileCoreServices.framework in Frameworks */,
+				D025B1832032BCC000C75E1C /* PushKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D025B15F2032B51A00C75E1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D025B16A2032B51A00C75E1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D0115C922033CB0900A87FA9 /* VoipExtension */ = {
+			isa = PBXGroup;
+			children = (
+				D0115C932033CB0900A87FA9 /* CallDirectoryHandler.h */,
+				D0115C942033CB0900A87FA9 /* CallDirectoryHandler.m */,
+				D0115C962033CB0900A87FA9 /* Info.plist */,
+			);
+			path = VoipExtension;
+			sourceTree = "<group>";
+		};
+		D025B1412032B51A00C75E1C = {
+			isa = PBXGroup;
+			children = (
+				D025B17F2032B88E00C75E1C /* Class */,
+				D025B14C2032B51A00C75E1C /* VoipCall */,
+				D025B1652032B51A00C75E1C /* VoipCallTests */,
+				D025B1702032B51A00C75E1C /* VoipCallUITests */,
+				D0115C922033CB0900A87FA9 /* VoipExtension */,
+				D025B14B2032B51A00C75E1C /* Products */,
+				D025B1812032BCC000C75E1C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D025B14B2032B51A00C75E1C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D025B14A2032B51A00C75E1C /* VoipCall.app */,
+				D025B1622032B51A00C75E1C /* VoipCallTests.xctest */,
+				D025B16D2032B51A00C75E1C /* VoipCallUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D025B14C2032B51A00C75E1C /* VoipCall */ = {
+			isa = PBXGroup;
+			children = (
+				D02C3DF4204539F0009179F8 /* VoipCall.entitlements */,
+				D025B14D2032B51A00C75E1C /* AppDelegate.h */,
+				D025B14E2032B51A00C75E1C /* AppDelegate.m */,
+				D025B1502032B51A00C75E1C /* ViewController.h */,
+				D025B1512032B51A00C75E1C /* ViewController.m */,
+				D025B1532032B51A00C75E1C /* Main.storyboard */,
+				D025B1562032B51A00C75E1C /* Assets.xcassets */,
+				D025B1582032B51A00C75E1C /* LaunchScreen.storyboard */,
+				D025B15B2032B51A00C75E1C /* Info.plist */,
+				D025B15C2032B51A00C75E1C /* main.m */,
+			);
+			path = VoipCall;
+			sourceTree = "<group>";
+		};
+		D025B1652032B51A00C75E1C /* VoipCallTests */ = {
+			isa = PBXGroup;
+			children = (
+				D025B1662032B51A00C75E1C /* VoipCallTests.m */,
+				D025B1682032B51A00C75E1C /* Info.plist */,
+			);
+			path = VoipCallTests;
+			sourceTree = "<group>";
+		};
+		D025B1702032B51A00C75E1C /* VoipCallUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D025B1712032B51A00C75E1C /* VoipCallUITests.m */,
+				D025B1732032B51A00C75E1C /* Info.plist */,
+			);
+			path = VoipCallUITests;
+			sourceTree = "<group>";
+		};
+		D025B17F2032B88E00C75E1C /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				D025B1862032C22C00C75E1C /* ProviderDelegate.h */,
+				D025B1872032C22C00C75E1C /* ProviderDelegate.m */,
+				D025B1892032C2C400C75E1C /* CallManager.h */,
+				D025B18A2032C2C400C75E1C /* CallManager.m */,
+				D025B18C2032CD1300C75E1C /* Call.h */,
+				D025B18D2032CD1300C75E1C /* Call.m */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		D025B1812032BCC000C75E1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D025B1842032BCCA00C75E1C /* MobileCoreServices.framework */,
+				D025B1822032BCC000C75E1C /* PushKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D025B1492032B51A00C75E1C /* VoipCall */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D025B1762032B51A00C75E1C /* Build configuration list for PBXNativeTarget "VoipCall" */;
+			buildPhases = (
+				D025B1462032B51A00C75E1C /* Sources */,
+				D025B1472032B51A00C75E1C /* Frameworks */,
+				D025B1482032B51A00C75E1C /* Resources */,
+				D0115C9D2033CB0900A87FA9 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VoipCall;
+			productName = VoipCall;
+			productReference = D025B14A2032B51A00C75E1C /* VoipCall.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D025B1612032B51A00C75E1C /* VoipCallTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D025B1792032B51A00C75E1C /* Build configuration list for PBXNativeTarget "VoipCallTests" */;
+			buildPhases = (
+				D025B15E2032B51A00C75E1C /* Sources */,
+				D025B15F2032B51A00C75E1C /* Frameworks */,
+				D025B1602032B51A00C75E1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D025B1642032B51A00C75E1C /* PBXTargetDependency */,
+			);
+			name = VoipCallTests;
+			productName = VoipCallTests;
+			productReference = D025B1622032B51A00C75E1C /* VoipCallTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D025B16C2032B51A00C75E1C /* VoipCallUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D025B17C2032B51A00C75E1C /* Build configuration list for PBXNativeTarget "VoipCallUITests" */;
+			buildPhases = (
+				D025B1692032B51A00C75E1C /* Sources */,
+				D025B16A2032B51A00C75E1C /* Frameworks */,
+				D025B16B2032B51A00C75E1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D025B16F2032B51A00C75E1C /* PBXTargetDependency */,
+			);
+			name = VoipCallUITests;
+			productName = VoipCallUITests;
+			productReference = D025B16D2032B51A00C75E1C /* VoipCallUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D025B1422032B51A00C75E1C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Facebook;
+				TargetAttributes = {
+					D025B1492032B51A00C75E1C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					D025B1612032B51A00C75E1C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D025B1492032B51A00C75E1C;
+					};
+					D025B16C2032B51A00C75E1C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D025B1492032B51A00C75E1C;
+					};
+				};
+			};
+			buildConfigurationList = D025B1452032B51A00C75E1C /* Build configuration list for PBXProject "VoipCall" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D025B1412032B51A00C75E1C;
+			productRefGroup = D025B14B2032B51A00C75E1C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D025B1492032B51A00C75E1C /* VoipCall */,
+				D025B1612032B51A00C75E1C /* VoipCallTests */,
+				D025B16C2032B51A00C75E1C /* VoipCallUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D025B1482032B51A00C75E1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D025B15A2032B51A00C75E1C /* LaunchScreen.storyboard in Resources */,
+				D025B1572032B51A00C75E1C /* Assets.xcassets in Resources */,
+				D025B1552032B51A00C75E1C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D025B1602032B51A00C75E1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D025B16B2032B51A00C75E1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D025B1462032B51A00C75E1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D025B1522032B51A00C75E1C /* ViewController.m in Sources */,
+				D025B18B2032C2C400C75E1C /* CallManager.m in Sources */,
+				D025B15D2032B51A00C75E1C /* main.m in Sources */,
+				D025B18E2032CD1300C75E1C /* Call.m in Sources */,
+				D025B14F2032B51A00C75E1C /* AppDelegate.m in Sources */,
+				D025B1882032C22C00C75E1C /* ProviderDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D025B15E2032B51A00C75E1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D025B1672032B51A00C75E1C /* VoipCallTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D025B1692032B51A00C75E1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D025B1722032B51A00C75E1C /* VoipCallUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D025B1642032B51A00C75E1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D025B1492032B51A00C75E1C /* VoipCall */;
+			targetProxy = D025B1632032B51A00C75E1C /* PBXContainerItemProxy */;
+		};
+		D025B16F2032B51A00C75E1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D025B1492032B51A00C75E1C /* VoipCall */;
+			targetProxy = D025B16E2032B51A00C75E1C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D025B1532032B51A00C75E1C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D025B1542032B51A00C75E1C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D025B1582032B51A00C75E1C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D025B1592032B51A00C75E1C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D025B1742032B51A00C75E1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D025B1752032B51A00C75E1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D025B1772032B51A00C75E1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = VoipCall/VoipCall.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3NJC3EGBWR;
+				INFOPLIST_FILE = VoipCall/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shumin.cn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D025B1782032B51A00C75E1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = VoipCall/VoipCall.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3NJC3EGBWR;
+				INFOPLIST_FILE = VoipCall/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shumin.cn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D025B17A2032B51A00C75E1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VoipCallTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Facebook.VoipCallTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VoipCall.app/VoipCall";
+			};
+			name = Debug;
+		};
+		D025B17B2032B51A00C75E1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VoipCallTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Facebook.VoipCallTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VoipCall.app/VoipCall";
+			};
+			name = Release;
+		};
+		D025B17D2032B51A00C75E1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VoipCallUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Facebook.VoipCallUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VoipCall;
+			};
+			name = Debug;
+		};
+		D025B17E2032B51A00C75E1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VoipCallUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Facebook.VoipCallUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VoipCall;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D025B1452032B51A00C75E1C /* Build configuration list for PBXProject "VoipCall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D025B1742032B51A00C75E1C /* Debug */,
+				D025B1752032B51A00C75E1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D025B1762032B51A00C75E1C /* Build configuration list for PBXNativeTarget "VoipCall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D025B1772032B51A00C75E1C /* Debug */,
+				D025B1782032B51A00C75E1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D025B1792032B51A00C75E1C /* Build configuration list for PBXNativeTarget "VoipCallTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D025B17A2032B51A00C75E1C /* Debug */,
+				D025B17B2032B51A00C75E1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D025B17C2032B51A00C75E1C /* Build configuration list for PBXNativeTarget "VoipCallUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D025B17D2032B51A00C75E1C /* Debug */,
+				D025B17E2032B51A00C75E1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D025B1422032B51A00C75E1C /* Project object */;
+}
